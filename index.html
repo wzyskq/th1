@@ -17,14 +17,24 @@
 <body>
     <div class="title">
         <h1>
-            软件商店<br>
+            <a href="https://wzyskq.github.io/">软件商店</a><br>
             <span>Beta</span>
         </h1>
         <p>
             /*这些软件都是个人编写*/<br>
             /*暂时仅支持windows*/<br>
-            /*下载的后缀若不是.exe,请改为.exe*/
         </p>
+    </div>
+    <div class="know">
+        <h2>使用须知</h2>
+        <p class="w">1.下载后的文件为压缩文件，解压即可</p>
+        <p class="w">2.若出现windows警告，按下方步骤即可</p>
+        <p class="w">3.我能理解您害怕中毒，为此特意附上了代码供您参考</p>
+        <p class="w">4.<b>免责声明：</b>自愿下载，若您的电脑出现任何问题，与本站无关！！！</p>
+        <div class="pic">
+            <img src="https://pic.lienav.com/i/2022/05/29/62933b1e7d0b8.png" alt="1.png" title="1.png" height="200" />
+            <img src="https://pic.lienav.com/i/2022/05/29/62933b2177bdb.png" alt="2.png" title="2.png" height="200" />
+        </div>
         
     </div>
     <div class="container">
@@ -32,7 +42,7 @@
             <div class="part1 bg1"></div>
             <div class="part2">
                 <p class="words"><b>模拟报错系统</b></p>
-                <a href="SaveStudent.exe" class="href0">
+                <a href="SaveStudent.zip" class="href0">
                     <p class="linking">
                         <i class="bi bi-link-45deg">下载链接</i>
                     </p>
@@ -44,15 +54,15 @@
             </div>
             <div class="part3">
                 <pre>
-                    <code>     
 # python源码
+
 import pyautogui as gui
+
 w = gui.password(text='请输入想要的文字:\n\n默认为:摄像头温度过高，无法开启', title='模拟报错系统2.0', mask='')
 if w == '':
     w = '摄像头温度过高，无法开启'
 gui.alert(text=f'{w}', title='警告', button='OK')
 gui.confirm(text=f'{w}', title='警告', buttons=['OK', 'Cancel']
-                    </code>
                 </pre>
             </div>
         </div>
