@@ -59,11 +59,22 @@ p{
 p.w{
     margin: auto;
 }
-.pic{
-    padding: 10px;
-    margin: 10px 28%;
+.pic1{
+    margin: 10px;
+    height: 220px;
+    width: 220px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url(https://pic.lienav.com/i/2022/05/29/62933b1e7d0b8.png);
+    background-size: 100% 100%;
+}
+.pic2{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    background-image: url(https://pic.lienav.com/i/2022/05/29/62933b2177bdb.png);
+    background-size: 100% 100%;
+    float: left;
+    flex-wrap: wrap;
 }
 .container{
     display: flex;
